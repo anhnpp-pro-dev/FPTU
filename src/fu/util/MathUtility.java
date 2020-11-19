@@ -20,11 +20,12 @@ public class MathUtility {
         if (n == 0 || n == 1) {
             return 1;//0! = 1! = 1
         }        //sống sót đến đây, thì n > 1 và <= 20 rồi
-        long result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
-        }
-        return result;
+//        long result = 1;
+//        for (int i = 2; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+        return n * getFactorial(n - 1);
     }
 
     public static void main(String[] args) {
@@ -39,8 +40,6 @@ public class MathUtility {
 
         //e: ném về vùng ngoại lệ IllegalArgumentException nếu giai thừa -5
         System.out.println("-5!: " + MathUtility.getFactorial(-5));
-        
-        System.out.println("");
     }
     //Code viết ra thì Developer phải test trước cái đã
     //có vài hình thwucs test code khác nhau
@@ -56,7 +55,5 @@ public class MathUtility {
     //vẫn xem bằng mắt
     //4. Viết 1 trang web gọi hàm xử lí..., hao sức quá
     //ta chơi cách 1 và 2
-    
-    
-            
+
 }
