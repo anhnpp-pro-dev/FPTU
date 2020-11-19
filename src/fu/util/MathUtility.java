@@ -39,6 +39,8 @@ public class MathUtility {
 
         //e: ném về vùng ngoại lệ IllegalArgumentException nếu giai thừa -5
         System.out.println("-5!: " + MathUtility.getFactorial(-5));
+        
+        System.out.println("");
     }
     //Code viết ra thì Developer phải test trước cái đã
     //có vài hình thwucs test code khác nhau
@@ -54,4 +56,7 @@ public class MathUtility {
     //vẫn xem bằng mắt
     //4. Viết 1 trang web gọi hàm xử lí..., hao sức quá
     //ta chơi cách 1 và 2
+    
+    
+            
 }
